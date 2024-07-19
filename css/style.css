@@ -1,0 +1,341 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Satisfy&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+  background-color: rgb(255, 181, 43); /* warna latar belakang */
+  color: #333; /* warna teks */
+}
+
+.fa-user{
+  color: #333;
+  transition: transform 0.4s ease-in;
+}
+
+.navbar {
+  background-color: white;
+}
+
+
+
+.active {
+  font-weight: bolder;
+  color: orangered;
+  text-decoration: none;
+}
+
+.actived:hover {
+  color: orangered;
+  background-color: whitesmoke;
+}
+
+.fas:hover {
+  color: orangered;
+}
+
+.navbar-toggler {
+  order: -1;
+  margin-left: 0.5rem;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body{
+    margin-top:4rem;
+
+  }
+  
+  ::selection {
+    background-color: orange; /* warna latar belakang */
+    color: #333; /* warna teks */
+  }
+  
+/*NAVBAR*/
+  .navbar {
+    background-color: white;
+    min-height: 4rem;
+  }
+  
+  .navbar .login {
+    order: 1;
+  }
+
+  .fas{
+    transition: color 0.3s ease-in;
+  }
+  .fas:hover {
+    color: orangered;
+    transition: color 0.3s ease-out;
+  }
+
+  .nav-link{
+    transition: background-color 0.3s ease-in;
+  }
+  
+  .nav-link:hover {
+    background-color: #ece9e9;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .navbar-toggler {
+    order: -1;
+    margin-left: 0.5rem;
+  }
+/* AKHIR NAVBAR */
+
+
+/*  AWAL INDEX*/
+.t-search{
+ width:75%;
+}
+
+.t-search button{
+  border-radius: 0rem;
+}
+
+.b-cari{
+  background-color: rgb(253, 176, 32);
+  border-radius: 0rem;
+}
+
+.b-cari:hover{
+  background-color: rgb(240, 157, 5) ;
+}
+
+/* AKHIR INDEX */
+
+
+/* PRODUK */
+/*CARD PRODUK*/
+.c-produk h3 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+
+.c-produk {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  padding-top: 5vh;
+  padding-inline: 2rem;
+}
+
+.card-lists a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.g-card {
+  max-width: 100%;
+  display: block;
+}
+
+.card-lists {
+  width: 100%;
+  max-width: 330px;
+  max-width: 310px;
+}
+
+.cards {
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  transition: .15s ease-in;
+  box-shadow: 0 2px 2px grey;
+}
+
+.cards:hover {
+  box-shadow: 0 0 0 2px orange;
+  transform: translatey(-5px);
+}
+
+.card-images {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+  height: 5cm;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25;
+}
+
+.harga {
+  color: #4D9841;
+  font-weight: bold;
+  justify-content: left;
+  display: flex;
+}
+/*AKHIR CARD PRODUK*/
+.warna1{
+    background-color: #876445;;
+}
+.warna2{
+    background-color: #CA965C;
+}
+.warna3{
+    background-color: #EEC373;
+}
+.warna4{
+    background-color: #F4DFBA;;
+}
+
+
+
+
+.banner{
+  height:70vh;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/banners.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.highlighted-kategori{
+    
+    height: 250px;
+}
+
+.no-decoration{
+    text-decoration: none;
+    color:white;
+}
+.no-decoration:hover{
+color:#EEC373;
+}
+
+.font{
+    font-family: bold;
+    font-size:30px;
+}
+
+
+.image-box{
+    height: 100%;
+    /* height: 200px; */
+}
+
+/* .image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position:center;
+} */
+
+.banner-produk{
+    height:35vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/banners.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#about{
+    padding: 50px 0px;
+    background: #f0f3f0;
+}
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h2{
+    font-size: 3rem;
+}
+#about p{
+    font-size: 1.5rem;
+    color: #555;
+}
+.about-img{
+    flex: 1 1 400px; /* 1 = grow 1 = shrink */
+    padding: 15px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform:translate(0);
+    }
+}
+.about-img img{
+    display: block;
+    height: 310px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translateX(-200%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation{
+    100%{
+        transform:translate(0);
+    }
+}
+
+
+produk-terkait-image{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+    object-position:center; 
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .banner-produk{
+    height:24vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar li a{
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 991px){
+  
+  .navbar li a {
+    font-weight: 700;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 3rem;
+  }
+}
+
+
+/* LOGIN MODAL */
+/* AKHIR LOGIN MODAL */

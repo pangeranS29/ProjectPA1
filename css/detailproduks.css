@@ -1,0 +1,220 @@
+
+.atas-produk{
+    margin-top: 4.2rem;
+    padding-inline: 1rem;
+}
+
+.harga{
+    color: green;
+}
+
+.card{
+    padding:1rem;
+}
+
+.card-wrappers{
+    margin: 1rem 3rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    height: fit-content;
+}
+.gambar-product{
+    width: 90%;
+    display: block;
+    border-radius: 1rem;
+}
+.img-display{
+    overflow: hidden;
+    height: 80%;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+    padding: 1rem;
+}
+
+.product-content{
+    padding: 0.5rem 1rem;
+}
+.product-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+}
+
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+
+.product-detail h3{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+.desk-produk{
+    display: flex;
+}
+
+.desk-produk font{
+    color:#41464b;
+}
+
+.product-imgs{
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-imgs img{
+    max-height: 100%;
+}
+
+
+
+@media screen and (min-width: 760px){
+    .card{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        border: none;
+    }
+
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .card-wrappers{
+    margin: 0rem;
+    }
+    .gambar-product{
+        width: 100%;
+    } 
+
+    .gambar-product{
+        border-radius: 0rem;
+    }
+
+    .card{
+        padding:0rem;
+    }
+
+    body{
+        height: 100%;
+    }
+
+}
+
+/* BREADCRUMPS */
+
+.hitam{
+    color:black;
+  }
+
+  .product-link{
+    border:1px solid #3A7CFF;
+    
+  }
+
+  .product-link:hover{
+    background-color: white;
+    border:1px solid #3A7CFF;
+  }
+
+
+  /* PAGINATION */
+.breadcrumbs {
+  border: 1px solid #cbd2d9;
+  border-radius: 0.3rem;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.breadcrumbs__item {
+  background: #fff;
+  color: #333;
+  outline: none;
+  padding: 0.75em 0.75em 0.75em 1.25em;
+  position: relative;
+  text-decoration: none;
+  transition: background 0.2s linear;
+}
+
+.breadcrumbs__item:hover:after,
+.breadcrumbs__item:hover {
+  background: #edf1f5;
+}
+
+
+
+.breadcrumbs__item:after,
+.breadcrumbs__item:before {
+  background: white;
+  bottom: 0;
+  clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+  content: "";
+  left: 100%;
+  position: absolute;
+  top: 0;
+  transition: background 0.2s linear;
+  width: 1em;
+  z-index: 1;
+}
+
+.breadcrumbs__item:before {
+  background: grey;
+}
+
+.breadcrumbs__item:last-child {
+  border-right: none;
+}
+
+.breadcrumbs__item.is-active {
+  background: #edf1f5;
+}

@@ -1,0 +1,134 @@
+/* Kategori */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #F7F7F7;
+  }
+
+  
+  
+  .card {
+      --size: clamp(300px, 50vmin, 600px);
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #000;
+    transform: translateZ(0);
+    margin-inline: 0.5rem;
+    box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
+    box-shadow: 0 2px 2px grey;
+
+  }
+  
+  .card__img {
+    width: 110%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.9rem;
+    margin-left: -1rem;
+    object-fit: cover;
+    transform: scale(calc(1 + (var(--hover, 0) * 0.25)));
+    transition: transform 0.2s;
+  }
+  
+  .card__footer {
+    padding: 0 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    display: grid;
+    gap: 0.5ch;
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    align-content: center;
+  }
+  
+  .card__footer span:nth-of-type(1) {
+    font-size: calc(var(--size) * 0.065);
+  }
+  
+  .card__footer span:nth-of-type(2) {
+    font-size: calc(var(--size) * 0.035);
+  }
+  
+  .card:is(:hover, :focus-visible) {
+    --hover: 1;
+  }
+  /* Kategori */
+  
+  
+  
+    .icon {
+      width: 3rem;
+    }
+  
+    .bawah {
+      display: flex;
+      margin-bottom: 4rem;
+    }
+  
+    .t-icon {
+      margin-right: 1rem;
+    }
+  
+    /* Kategori */
+    .kategori {
+      background: whitesmoke;
+      min-height: 90vh;
+    }
+  
+    .kategori h3 {
+      font-size: 1.5rem;
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      justify-content: center;
+      display: flex;
+    }
+  
+    .containers {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .g-kategori {
+      max-width: 100%;
+      display: block;
+    }
+  
+  
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      transform: translate(-50%, -50%);
+      color: white;
+  
+      opacity: 0.7;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+    .centered h3 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
